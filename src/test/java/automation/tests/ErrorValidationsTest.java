@@ -31,7 +31,7 @@ public class ErrorValidationsTest extends BaseTest {
 		public void LoginErrorValidation()throws IOException
 		{
 		landingPage.loginApp("ramso@gmail.com","Dec16mar1");
-		Assert.assertEquals("Incorrect email password.",landingPage.getErrorMsg());
+		Assert.assertEquals("Incorrect email or password.",landingPage.getErrorMsg());
 		}
 		
 		@Test	
